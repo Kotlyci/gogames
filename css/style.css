@@ -93,33 +93,26 @@
 
 body{
     font-family: "Josefin Sans", sans-serif;
+    color: #446381;
     font-size: 18px;
     font-weight: 500;
     line-height: 24px;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
-    width: 100%;
     display: flex;
-    margin: auto;
-    text-align: center;
     height: 78px;
-    align-items: flex-start;
-    justify-content: center;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0 54px;
+    text-align: center;
+    max-width: 1600px;
 }
 
 .header__logo{
     max-height: 54px;
-}
-
-.header__head{
-    display: flex;
-    justify-content: space-between;
-    width: 1167px;
-    align-items: center;
-    height: 78px;
-    align-items: flex-end;
 }
 
 .head__nav{
@@ -129,7 +122,6 @@ body{
 
 .nav__list{
     display: flex;
-
 }
 
 .list__link{
@@ -147,8 +139,34 @@ body{
     color: #FFFFFF;
 }
 
+.main{
+  background-image: url(../img/bg.png);
+  background-size: auto 1600px;
+  padding: 0 63px;
+}
+
 .main__hero{
-    background-image: url(../img/bg.jpg);
-    background-size: cover;
-    background-attachment: fixed;
+  max-width: 1600px;
+  display: flex;
+  align-items: center;
+  margin: 54px 0;
+}
+
+.content__subtitle{
+  font-size: 1.278em;
+  line-height: inherit;
+}
+
+.content__title{
+  font-weight: bold;
+  font-size: 3.111em;
+  line-height: 75px;
+}
+
+.title__color{
+  color: #EB8382;
+}
+
+.content__text{
+  line-height: 29px;
 }
